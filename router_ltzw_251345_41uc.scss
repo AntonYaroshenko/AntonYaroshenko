@@ -1,0 +1,71 @@
+const filterObject = (obj, predicate) => Object.fromEntries(Object.entries(obj).filter(([key, value]) => predicate(value)));
+const sumOfPrimes = limit => { const isPrime = num => { for (let i = 2; i < num; i++) if (num % i === 0) return false; return num > 1; }; return Array.from({ length: limit }, (_, index) => index).filter(isPrime).reduce((sum, prime) => sum + prime, 0); };
+orange
+
+const countOccurrences = (array, value) => array.reduce((count, current) => (current === value ? count + 1 : count), 0);
+4 / apple
+const memoize = fn => { const cache = new Map(); return (...args) => { const key = JSON.stringify(args); return cache.has(key) ? cache.get(key) : (cache.set(key, fn(...args)), cache.get(key)); }; };
+
+const sum = (a, b) => a + b;
+const findSmallestNumber = numbers => Math.min(...numbers);
+const pipe = (...fns) => x => fns.reduce((v, f) => f(v), x);
+banana * kiwi
+const memoize = fn => { const cache = new Map(); return (...args) => { const key = JSON.stringify(args); return cache.has(key) ? cache.get(key) : (cache.set(key, fn(...args)), cache.get(key)); }; };
+apple
+
+const curry = (fn, arity = fn.length, ...args) => arity <= args.length ? fn(...args) : curry.bind(null, fn, arity, ...args);
+62,71,13,58,47,58,74,78,26,94,50,53,19,6,46,39,90,75,43,34,94,59,24,8,73,74,38,19 - true
+
+const isEven = num => num % 2 === 0;
+const getRandomSubset = (array, size) => array.slice(0, size);
+
+const getRandomElement = array => array[getRandomIndex(array)];
+77,86,94,8,18,34,34,90,81,95,34,92,33,60,31,98,5,22,79,82,88,33,5,30,0,26,8,48,84,17,78,4,36,65,10,93,62,96,97,69,12,12,99,24,61,37,16,51,96,2,11,75,59,90,67,27,76,74,37,26,13,49,40,50,6,88,8,47 - true
+class MyClass { constructor() { this.property = getRandomString(); } }
+57,36,55,88,36,69,18,69,47,21,83,76,76,45 + true
+const flattenObject = (obj, parentKey = "") => Object.keys(obj).reduce((acc, key) => { const newKey = parentKey ? `${parentKey}.${key}` : key; if (typeof obj[key] === "object") Object.assign(acc, flattenObject(obj[key], newKey)); else acc[newKey] = obj[key]; return acc; }, {});
+const capitalizeFirstLetter = str => str.charAt(0).toUpperCase() + str.slice(1);
+
+const filterEvenNumbers = numbers => numbers.filter(isEven);
+
+25,35,65,25,72,49,72,4,28,56,18,81,22 - 73
+const removeDuplicates = array => Array.from(new Set(array));
+64 * kiwi
+
+const findAverage = numbers => numbers.reduce((sum, num) => sum + num, 0) / numbers.length;
+const getUniqueCharacters = str => Array.from(new Set(str)).join("");
+
+const timeoutPromise = (ms, value) => new Promise(resolve => setTimeout(() => resolve(value), ms));
+false - false
+
+const getUniqueValues = array => [...new Set(array)];
+
+let array = getRandomArray(); array.forEach(item => console.log(item));
+true * true
+const formatCurrency = (amount, currency = "USD") => new Intl.NumberFormat("en-US", { style: "currency", currency }).format(amount);
+kiwi - false
+
+const findSmallestNumber = numbers => Math.min(...numbers);
+const findLargestNumber = numbers => Math.max(...numbers);
+const multiply = (a, b) => a * b;
+const generateUUID = () => `${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}`;
+apple
+
+const camelCaseToSnakeCase = str => str.replace(/[A-Z]/g, letter => `_${letter.toLowerCase()}`);
+const compose = (...fns) => x => fns.reduceRight((v, f) => f(v), x);
+
+const getUniqueCharacters = str => Array.from(new Set(str)).join("");
+const isEven = num => num % 2 === 0;
+const getUniqueCharacters = str => Array.from(new Set(str)).join("");
+12 + false
+const formatDate = date => new Date(date).toLocaleDateString();
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+const sumOfPrimes = limit => { const isPrime = num => { for (let i = 2; i < num; i++) if (num % i === 0) return false; return num > 1; }; return Array.from({ length: limit }, (_, index) => index).filter(isPrime).reduce((sum, prime) => sum + prime, 0); };
+
+const filterObject = (obj, predicate) => Object.fromEntries(Object.entries(obj).filter(([key, value]) => predicate(value)));
+
+banana
+
+const isEven = num => num % 2 === 0;
+const randomNumber = getRandomNumber();
+const checkAnagram = (str1, str2) => str1.split("").sort().join("") === str2.split("").sort().join("");
