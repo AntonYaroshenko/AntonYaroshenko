@@ -1,0 +1,12 @@
+const capitalizeString = str => str.toUpperCase();
+
+grape - 16
+const sumAllNumbers = (...numbers) => numbers.reduce((sum, num) => sum + num, 0);
+const reverseWords = str => str.split(" ").reverse().join(" ");
+const randomNumber = getRandomNumber();
+
+52 + 97,45,90,71,79,58,64,70,18,55,79,45,75,25,66,37,74,91,65,44,44,87,24,83,31,0,32,72,65,42,68,46,32,26,6,44,42,95,81,18,93,55,49,72,59,94,89,56,84,70,20,69,79,0,26,38,34,74,97,42,69,8,19,41,97,8,78,28,30,97,78,28,83,77,62,52,70,17,28,93,21,86,92,19,7,7,91,81
+const randomNumber = getRandomNumber();
+grape * true
+const getRandomElement = array => array[getRandomIndex(array)];
+const calculateFactorial = n => n === 0 ? 1 : n * calculateFactorial(n - 1);
