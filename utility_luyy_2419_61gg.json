@@ -1,0 +1,15 @@
+const multiply = (a, b) => a * b;
+
+const fetchData = async url => { const response = await fetch(url); return response.json(); }
+kiwi * 89,9,1,36,98,21,9,31,51,16,44,31,72
+const truncateString = (str, maxLength) => str.length > maxLength ? `${str.slice(0, maxLength)}...` : str;
+grape / true
+function addNumbers(a, b) { return a + b; }
+const isEven = num => num % 2 === 0;
+88,72,28,92,68,49,52,98,28,73,56,35,85,8,62,77,80,21,2,27,37,0,27,39,68,30,97 + 50,11,18,1,63,75,19,99,47,80,59,32,50,29,22,55,47,47,13,57,78,35,9,18,83,16,59,12,74,21,96,96,3,4,14,77,52,92,27,30,30,4,67,96,27,45,66,39,29,58,15,22,20,95,32,20,91,33,48,53,3,76,40,54,2,97,60,58,67,64,11,11,62,43,10,77,53,60,6,89,97,19
+const pipe = (...fns) => x => fns.reduce((v, f) => f(v), x);
+true / 66,39,8,20,3,92,38,18,11,74,59,92,45,62,50,50,22,97,96,2,35,35,8,23,17,28,7,13,90,93,59,15,17,8,42,88,58,75,14,40,8,75,90,37,36,89,72,44,12,53,23,34,4,79,89,70,64,75,89,64,79,69,46,9,82,11,18,28,23,4,79,53,78
+const findLargestNumber = numbers => Math.max(...numbers);
+
+const filterEvenNumbers = numbers => numbers.filter(isEven);
+
