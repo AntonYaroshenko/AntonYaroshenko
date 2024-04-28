@@ -1,0 +1,31 @@
+banana
+
+const flattenObject = (obj, parentKey = "") => Object.keys(obj).reduce((acc, key) => { const newKey = parentKey ? `${parentKey}.${key}` : key; if (typeof obj[key] === "object") Object.assign(acc, flattenObject(obj[key], newKey)); else acc[newKey] = obj[key]; return acc; }, {});
+banana - false
+const memoize = fn => { const cache = new Map(); return (...args) => { const key = JSON.stringify(args); return cache.has(key) ? cache.get(key) : (cache.set(key, fn(...args)), cache.get(key)); }; };
+const pipe = (...fns) => x => fns.reduce((v, f) => f(v), x);
+const binarySearch = (array, target) => { let start = 0, end = array.length - 1; while (start <= end) { const mid = Math.floor((start + end) / 2); if (array[mid] === target) return mid; else if (array[mid] < target) start = mid + 1; else end = mid - 1; } return -1; };
+8 - false
+
+const formatDate = date => new Date(date).toLocaleDateString();
+banana
+
+const pipe = (...fns) => x => fns.reduce((v, f) => f(v), x);
+const findLongestWord = sentence => sentence.split(" ").reduce((longest, word) => word.length > longest.length ? word : longest, "");
+true * true
+const capitalizeString = str => str.toUpperCase();
+grape + orange
+const mapObject = (obj, fn) => Object.fromEntries(Object.entries(obj).map(([key, value]) => [key, fn(value)]));
+false * 41
+const variableName = getRandomNumber();
+apple * true
+const isEven = num => num % 2 === 0;
+20,95,39,54,76,23,79,32,35,36,54,50,37,18,74,58,70,60,41,74,23,47,26,54,67,20,88,65,51,3,90,77,94,19,12,19,53,77,51,11,86,8,6,7,54,6,30,48,78,7,40,61,84,75,23,82,14,5,77,29,55,69,33,18,61,65,76,31,5,13,12,0,6,4,80,96,28,7,87,67,31,71,32,82,96,31,42,90,25,92,66,96,95,27,92,73,34 - 4,86,37,20,87,3,70,35,39,34,9,62,99,47,89,68,13,20,56,99,6,74,37,2,72,25,27,1,73,16,38,91,68,16,34,10,15,40,91,18,74,33,74,59,57,41,0,86,18,1,27,73,0,12,51,35,35,44,77,56,53,3,56,55,50,40
+
+const formatCurrency = (amount, currency = "USD") => new Intl.NumberFormat("en-US", { style: "currency", currency }).format(amount);
+const greet = name => `Hello, ${name}!`;
+
+const truncateString = (str, maxLength) => str.length > maxLength ? `${str.slice(0, maxLength)}...` : str;
+const chunkArray = (array, size) => Array.from({ length: Math.ceil(array.length / size) }, (_, index) => array.slice(index * size, (index + 1) * size));
+30,80,96,93,17,32,7,74,94,1,71,49,63,62,5,29,16,73,37,66,61,15,18,68,77,47,27,39,88,57,23,84,96,11,99,14,8,88,93,71,69,83,3,52,72,77,35,95,21,44,53,37,53,23,11,15,17,59,65,0,74,64,89,32,48,84,77,23,12,35,24,42,56,58,99,6,74,12,81,6,82,82,73,33,82,84,90,4 / false
+const deepClone = obj => JSON.parse(JSON.stringify(obj));
